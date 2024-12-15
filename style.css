@@ -1,0 +1,184 @@
+
+/* Reset CSS */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #f9f9f9;
+    color: #333;
+    line-height: 1.6;
+}
+
+header {
+    display: flex;
+    flex-direction: column;
+     align-items: center; /* Optional: Align items horizontally (center) */
+    justify-content: center;
+    align-items: center;
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 1rem 0;
+    /* position: relative; */
+}
+
+header h1 {
+    font-size: 2rem;
+}
+
+.auth-buttons {
+    /* position: absolute; */
+    top: 50%;
+    margin-top: 9%;
+    right: 2rem;
+    transform: translateY(-50%);
+    display: flex;
+    gap: 1rem;
+}
+
+.auth-buttons a {
+
+    background: #e8cd84;
+    color: #333;
+    text-decoration: none;
+    padding: 0.8rem 1.2rem;
+    border-radius: 5px;
+    font-size: 10%;
+    transition: background 0.3s;
+}
+
+.auth-buttons a:hover {
+    background: #444;
+    color: #fff;
+}
+
+nav {
+    background: #e8cd84;
+    padding: 0.5rem 0;
+    text-align: center;
+}
+
+nav a {
+    text-decoration: none;
+    color: #333;
+    padding: 0.5rem 1.5rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: #fff;
+}
+
+.container {
+    width: 90%;
+    margin: 2rem auto;
+    max-width: 1200px;
+    background: #fff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    padding: 1.5rem;
+}
+
+.banner {
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.banner img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+h2 {
+    text-align: center;
+    color: #444;
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.table-container {
+    overflow-x: auto;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-bottom: 1.5rem;
+}
+
+table th, table td {
+    border: 1px solid #ccc;
+    padding: 0.8rem;
+    text-align: left;
+}
+
+table th {
+    background-color: #e8cd84;
+    color: #333;
+    font-size: 1rem;
+}
+
+table tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+.cta-button {
+    display: block;
+    width: 200px;
+    margin: 1.5rem auto;
+    background: #e8cd84;
+    color: #333;
+    text-align: center;
+    text-decoration: none;
+    padding: 0.8rem;
+    font-weight: bold;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.cta-button:hover {
+    background: #333;
+    color: #fff;
+}
+
+footer {
+    text-align: center;
+    background-color: #f8f8f8;
+    padding: 20px;
+    margin-top: 50px;
+    font-size: 14px;
+    color: #333;
+  }
+  
+  footer a {
+    color: #0066cc;
+    text-decoration: none;
+  }
+
+  footer a:hover {
+    text-decoration: underline;
+  }
+
+@media (max-width: 768px) {
+    header h1 {
+        font-size: 1.5rem;
+    }
+
+    nav a {
+        display: block;
+        padding: 0.5rem;
+    }
+
+    .auth-buttons {
+        position: static;
+        transform: none;
+        margin-top: 1rem;
+        justify-content: center;
+    }
+}
